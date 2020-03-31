@@ -1,0 +1,57 @@
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafb;
+}
+.modal-content {
+    display: flex;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+  }
+
+  .container-fluid {
+      display: flex;
+      padding: 0px;
+  }
+
+  .course-img {
+      display: flex;
+      justify-content: flex-start;
+      padding-right: 25px;
+  }
+  .course-info {
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  .title {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+
+  .btn-rounded {
+      background-color: white;
+      color: bcbcbc;
+      padding: 10px;
+      height: 50px;
+      border-radius: 40px;
+      border: 2px;
+      border-color: #fafafb;
+  }
+
+  .course-details {
+    display: flex;
+    flex-direction: row;
+}
+
+  .form-control {
+
+}
