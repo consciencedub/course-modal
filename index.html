@@ -21,66 +21,79 @@
 
         <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary centered" data-toggle="modal" data-target="#gridSystemModal">
-    Launch demo modal
+    Start a New Course
   </button>
   
   <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header pl-5">
           <h4 class="modal-title" id="gridModalLabel">New Course Modal</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
         <div class="modal-body">
-          <div class="container-fluid">
+          <div class="container-fluid pt-3">
 
-            <div class="course-img">
-              <img src="assets/san-holo.jpg" alt="San Holo" height="100" width="100"> 
+            <div class="course-img pl-5">
+              <img src="assets/san-holo.jpg" alt="San Holo" height="125" width="125"> 
             </div>
             
-            <div class="course-info">
+            <div class="course-info pl-5">
+           
+            <div class="duh"> 
+              <div class="modal-subhead">Title</div>  
+              <textarea class="message">
+              Course Name
+              </textarea>  
+              <span>50 char. left</span>
+            </div>
+
+
               <div>
-                <div class="title">Title <input type="text" id="myText" placeholder="Course Name"></div>
-                <div class="title">Description <input type="text" id="myText" placeholder="In this module you'll learn">
+              
+                <div class="description message2">Description <input type="text" id="myText" placeholder="In this module you'll learn">
                 </div>
               </div>
             
-              <div class="add">
-                <button class="btn-rounded" type="button" onclick="alert('Hello world!')">Add due date <i class="fa fa-clock-o" style="font-size:16px"></i></button>
-                <button class="btn-rounded" type="button" onclick="alert('Hello world!')">Add tags <i class="fa fa-plus" style="font-size:16px"></i></button>
+              <div class="add pb-3 pt-3">
+                <button type="button" class="btn btn-rounded btn-outline-primary"><span>Add due date <i class="fa fa-clock-o" style="font-size:16px"></i></span></button>
+                <button type="button" class="btn btn-rounded btn-outline-primary"><span>Add tags <i class="fa fa-plus" style="font-size:16px"></i></span></button>
               </div>
 
             </div>
         </div>
 
-        <div class="course-details">
-          <select class="form-control">
-            <option value="one">One</option>
-            <option value="two">Two</option>
-            <option value="three">Three</option>
-            <option value="four">Four</option>
-            <option value="five">Five</option>
-        </select>
-
-        <select class="form-control">
-          <option value="one">One</option>
-          <option value="two">Two</option>
-          <option value="three">Three</option>
-          <option value="four">Four</option>
-          <option value="five">Five</option>
-      </select>
-        </div>
-
-
         <div class="modal-footer">
-          <i class="fa fa-file-text-o" style="font-size:24px">Use a Template</i>
+
+          <!-- <div>
+            <div class="course-details">
+              <select class="form-control">
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+                <option value="four">Four</option>
+                <option value="five">Five</option>
+            </select>
+
+            <select class="form-control">
+              <option value="one">One</option>
+              <option value="two">Two</option>
+              <option value="three">Three</option>
+              <option value="four">Four</option>
+              <option value="five">Five</option>
+          </select>
+        </div>
+          </div> -->
           
+          <i class="fa fa-file-text-o" style="font-size:24px">Use a Template</i>
+         
           <div>
             <button type="button" class="btn btn-default waves-effect waves-light" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary waves-effect waves-light">Create</button>
           </div>
+
         </div>
 
       </div>
