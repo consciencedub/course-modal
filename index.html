@@ -44,15 +44,16 @@
            
             <div class="duh"> 
               <div class="modal-subhead">Title</div>  
-              <textarea id="message styled">
+              <textarea id="message"  rows="4"cols="50" placeholder="Course Name">
               Course Name
               </textarea>  
-              <span>50 char. left</span>
+              <label for="countdown">50 char. left</label>
+              <textarea id="message" maxlength="50"></textarea>
             </div>
 
             <div class="duh"> 
               <div class="modal-subhead pt-4">Description</div>  
-              <textarea id="message2 styled">
+              <textarea id="message2"  placeholder="In this module you'll learn..." rows="4"cols="50">
               In this module you'll learn...
               </textarea>  
             </div>
@@ -67,12 +68,12 @@
 
         <div class="modal-footer">
 
-          <div class="dropdowns">
+          <div class="drop-downs">
            
             <div class="menu-items">
               <form action="/action_page.php">
                 <div>Add to Program</div>                
-              <!-- <label for="cars">Add to program</label> -->
+              <!-- <label for="Add">Add to program</label> -->
                 <select id="add" name="add">
                   <option value="other">Company Culture</option>
                   <option value="Other 1">Other 1</option>
@@ -82,27 +83,30 @@
             </div>
 
                 <div>
-                  <i class="fa fa-arrow-right" style="font-size:24px"></i>
+                  <i class="fa fa-arrow-right mt-4 pl-2 pr-2" style="font-size:24px"></i>
                 </div>
 
             <div class="menu-items">
               <form action="/action_page.php">
                 <div>Place at</div>
-                <!-- <label for="cars">Place At</label> -->
-                <select id="cars" name="cars">
+                <!-- <label for="place">Place At</label> -->
+                <select id="place" name="place">
                   <option value="Other">Beginning of the list</option>
                   <option value="Other 1">Other 1</option>
                   <option value="Other 2">Other 2</option>
                   <option value="Other 1">Other 3</option>
                 </select>
             </div>
-          
           </div>
 
+          <div class="form-group col-12">
+            <hr>
+            </div>
+
           <div>
-              <i class="fa fa-file-text-o" style="font-size:24px">Use a Template</i>
+              <i class="fa fa-file-text-o" style="font-size:24px">Use a Template</i><h4>Use a Template</h4>
           </div>
-              <button type="button" class="btn btn-default waves-effect waves-light" data-dismiss="modal">Close</button>
+              <div><button type="button" class="btn btn-default waves-effect waves-light" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary waves-effect waves-light">Create</button>
             </div>
 
