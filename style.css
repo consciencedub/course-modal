@@ -2,7 +2,7 @@
     font-size: medium;
     text-transform: uppercase;
     color: gray;
-    width: 400px;
+    width: 450px;
 
 }.duh {
     display: flex;
@@ -80,13 +80,13 @@
     flex-direction: row;
 }
 
-textarea {
+/* textarea {
     border: none;
     resize: none;
-}
+} */
 
 .message {
-    width: 390px;
+    width: 550px;
     height: 50px;
     margin-left: 5px;
     border: none;
@@ -94,11 +94,12 @@ textarea {
     font-size: 2rem;
 }
 
-#message2 {
+.message2 {
     width: 390px;
     height: 50px;
     margin-left: 5px;
     border: none;
+    resize: none;
 }
 
 .modal-footer {
@@ -154,11 +155,14 @@ h6 {
 }
 
 .left-chars {
-    width: 200px;
+    width: 120px;
+    font-size: 12px;
+    text-align: right;
 }
 
 .box-info {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    width: 450px;
 }
