@@ -44,16 +44,17 @@
            
             <div class="duh"> 
               <div class="modal-subhead">Title</div>  
-              <textarea id="message"  rows="4"cols="50" placeholder="Course Name">
-              Course Name
-              </textarea>  
-              <label for="countdown">50 char. left</label>
-              <textarea id="message" maxlength="50"></textarea>
+              <div class="box-info">
+                <textarea class="message" rows="4"cols="50" placeholder="Course Name">
+                  Course Name
+                  </textarea>  
+                  <label class="left-chars"  for="countdown">50 char. left</label>
+              </div>
             </div>
 
             <div class="duh"> 
-              <div class="modal-subhead pt-4">Description</div>  
-              <textarea id="message2"  placeholder="In this module you'll learn..." rows="4"cols="50">
+              <div class="modal-subhead pt-4 pb-2">Description</div>  
+              <textarea class="message2"  placeholder="In this module you'll learn..." rows="4"cols="50">
               In this module you'll learn...
               </textarea>  
             </div>
@@ -70,41 +71,45 @@
 
           <div class="drop-downs">
            
-            <div class="menu-items">
-              <form action="/action_page.php">
-                <div>Add to Program</div>                
+                              
               <!-- <label for="Add">Add to program</label> -->
-                <select id="add" name="add">
-                  <option value="other">Company Culture</option>
-                  <option value="Other 1">Other 1</option>
-                  <option value="Other 2">Other 1</option>
-                  <option value="Other 3">Other 3</option>
-                </select>
-            </div>
+              <div class="dropdown">
+                <div>Add to Program</div> 
+                <button class="btn sef btn-secondary dropdown-toggle border-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Company Culture
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
 
-                <div>
-                  <i class="fa fa-arrow-right mt-4 pl-2 pr-2" style="font-size:24px"></i>
+                <div class="add-to">
+                  <i class="fa fa-arrow-right mt-4 pl-2 pr-2" style="font-size:20px"></i>
                 </div>
 
-            <div class="menu-items">
-              <form action="/action_page.php">
-                <div>Place at</div>
-                <!-- <label for="place">Place At</label> -->
-                <select id="place" name="place">
-                  <option value="Other">Beginning of the list</option>
-                  <option value="Other 1">Other 1</option>
-                  <option value="Other 2">Other 2</option>
-                  <option value="Other 1">Other 3</option>
-                </select>
+            <div class="dropdown">
+              <div>Place at</div>
+              <button class="btn sef btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Beginning of the list
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </div>
+
           </div>
 
           <div class="form-group col-12">
             <hr>
             </div>
 
-          <div>
-              <i class="fa fa-file-text-o" style="font-size:24px">Use a Template</i><h4>Use a Template</h4>
+          <div class="template">
+              <i class="fa fa-file-text-o pr-2 pl-2" style="font-size:24px"></i>
+              <span class="template-font">Use a Template</span>
           </div>
               <div><button type="button" class="btn btn-default waves-effect waves-light" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary waves-effect waves-light">Create</button>
