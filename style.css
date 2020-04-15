@@ -82,15 +82,15 @@
 
 .countdown {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     width: 100px;
-    height: 40px;
+    height: 60px;
     margin-left: 5px;
 }
 
 .message {
     width: 380px;   
-    height: 50px;   
+    height: 70px;   
     margin-left: 5px;   
     border: none;
     resize: none;
@@ -100,7 +100,7 @@
 
 .message2 {
     width: 390px;
-    height: 40px;
+    height: 70px;
     margin-left: 5px;
     border: none;
     resize: none;
