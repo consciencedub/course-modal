@@ -6,8 +6,14 @@ function updateCountdown() {
 jQuery(document).ready(function($) {
     updateCountdown();
     $('.message').change(updateCountdown);
-    $('.message').keyup(updateCountdown);
+    $('.message').keypress(updateCountdown);
 });
+
+$("#create").click(function(){
+    alert("A New Course Has Been Created!");
+    $(this).css("background", "gray");
+    
+  });
 
 // function updateCountdown() {
 //     // 50 is the max message length
